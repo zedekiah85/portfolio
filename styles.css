@@ -1,0 +1,150 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #055621;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content styles */
+/* Main content styles */
+main {
+    padding: 2rem;
+    margin-bottom: 3rem; /* Added margin to the bottom */
+}
+
+/* Footer styles */
+footer {
+    background-color: #055621;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    width: auto;
+    background-color: #055621;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+/* Skills section styles */
+#skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#skills li {
+    margin: 5px 0;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures project image doesn't overflow */
+}
+
+.project-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-info h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.project-image {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.project:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #055621;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #055621;
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+    .project-info, .project-image {
+        flex: auto;
+        width: 100%;
+    }
+}
